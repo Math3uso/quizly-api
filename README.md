@@ -39,7 +39,7 @@ Com o **Quizly**, você pode **criar, editar, visualizar e compartilhar quizzes*
 
 ### 📦 Pré-requisitos
 - [Node.js](https://nodejs.org/) instalado  
-- [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/) instalados
+- [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/)
 
 ### 🪄 Passos
 
