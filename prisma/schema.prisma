@@ -90,6 +90,9 @@ model Quiz {
   id          String        @id @default(uuid())
   title       String
   description String
+  count       Int           @default(0)
+  color       String        @default("#3B82F6")
+  thumb       String
   questions   Question[]
   participant Participant[]
   start       Boolean       @default(false)
