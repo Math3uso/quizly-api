@@ -43,6 +43,8 @@ export class QuizService {
         const validQuiz = await this.quizRepository.findDetailtQuizById(quizId);
         if (!validQuiz) throw new NotFoundException("Quiz is not found.");
 
+        await this.quizRepository.incrementQuiz(quizId);
+
         let quiz = await this.quizCache.getQuizById(quizId);
 
         if (!quiz) {

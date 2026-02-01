@@ -61,4 +61,17 @@ export class QuizRepository {
             }
         })
     }
+
+    async incrementQuiz(id: string) {
+        return await this.prisma.quiz.update({
+            where: { id },
+            data: {
+                count: { increment: 1 }
+            }
+        })
+    }
+
+    async getAll() {
+        return await this.prisma.quiz.findMany();
+    }
 }

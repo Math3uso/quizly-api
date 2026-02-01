@@ -19,11 +19,38 @@ import { QuizRankController } from "./controllers/rank-quiz.controller";
 import { QuizRankService } from "./services/quiz-rank.service";
 import { QuizUpdateController } from "./controllers/update-quiz.controller";
 import { QuizUpdateService } from "./services/quiz-update.service";
+import { ActiveQuizController } from "./controllers/active-quiz.controller";
+import { ActiveQuizService } from "./services/active-quiz.service";
+import { GetAllQuizController } from "./controllers/get-all-quiz.controller";
+import { QuizGetAllService } from "./services/quiz-get-all.service";
 
 @Module({
     imports: [AuthModule, RedisModule, ParticipantModule],
-    controllers: [CreateQuizController, QuizStartController, AnswerQuestionController, ResetProgressController, QuizResultController, QuizDeleteController, QuizRankController, QuizUpdateController],
-    providers: [QuizService, QuizRepository, QuizRepositoryCache, QuizAnswerService, QuizResetProgressService, QuizResultService, QuizDeleteService, QuizRankService, QuizUpdateService],
+    controllers: [
+        CreateQuizController,
+        QuizStartController,
+        AnswerQuestionController,
+        ResetProgressController,
+        QuizResultController,
+        QuizDeleteController,
+        QuizRankController,
+        QuizUpdateController,
+        ActiveQuizController,
+        GetAllQuizController
+    ],
+    providers: [
+        QuizService,
+        QuizRepository,
+        QuizRepositoryCache,
+        QuizAnswerService,
+        QuizResetProgressService,
+        QuizResultService,
+        QuizDeleteService,
+        QuizRankService,
+        QuizUpdateService,
+        ActiveQuizService,
+        QuizGetAllService
+    ],
     exports: [QuizRepository],
 
 })
