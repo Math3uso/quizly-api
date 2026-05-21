@@ -1,4 +1,4 @@
-# 🧠 Quizly
+# 🧠 Quizly - API
 
 Um criador e gerenciador de quizzes interativos com sistema de login JWT, cache em Redis e fluxo dinâmico de progresso.  
 Com o **Quizly**, você pode **criar, editar, visualizar e compartilhar quizzes**, além de participar de vários ao mesmo tempo e acompanhar seu desempenho com ranking e pontuação final.
